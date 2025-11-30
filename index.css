@@ -675,12 +675,13 @@ html,body{
 }
 
 .cont3{
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 .cont3-right .cont3-abt{
     
     color: orange;
+    font-size: 18px;
 }
 
    .cont3-right p{
