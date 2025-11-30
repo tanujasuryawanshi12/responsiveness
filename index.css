@@ -19,16 +19,19 @@ html,body{
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.header ul{
-    width: 800px;
+.header .nav-links{
+    width: 600px;
     /* border: 1px solid black; */
      display: flex;
-     justify-content: space-between;
+     gap:60px;
      align-items: center;
 }
-.header ul li{
+.header .nav-links li{
     list-style: none;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .orderbtn{
@@ -38,6 +41,19 @@ html,body{
     background-color: white;
     border: 2px solid orangered;
     font-size: 15px;
+}
+.hamburger{
+   display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background: #333;
 }
 .hero{
     max-width: 800px;
@@ -167,7 +183,7 @@ html,body{
 .cont4{
     width: 100%;
     height: 500px;
-    margin: 100px 0px;
+    margin-top: 100px;
     background-image: url("images/about2.png");
     background-size: cover;
     padding: 100px 0px;
@@ -256,61 +272,44 @@ html,body{
 
 .cont5{
     width: 100%;
-    /* height: 400px; */
-      /* border: 1px solid black;   */
+    height: 400px;
+    /* border:1px solid black;  */
+    margin-top: 100px;
+    
 }
 
-.cont5 div{
+.cont5-content{
     text-align: center;
 }
-
-.cont5 div p{
+.cont5-content p{
     color: orange;
     font-size: 20px;
-    font-weight: 600;
 }
-.cont5 div h1{
-    font-size: 40px;
-}
-
-.ser{
-    width: 900px;
-    
+.cont5-gallery{
+    max-width: 900px;
+    /* height: 200px; */
     margin: 50px auto;
+    /* border:1px solid black;  */
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
-.ser-feat{
+.cont5-card1{
     width: 280px;
-    padding: 60px 20px;
-   
+    height: 280px;
+    padding: 40px 20px;
+    text-align: center;
+    /* border: 1px solid black;  */
 }
-.ser-feat:hover{
-    box-shadow: 0px 8px 8px 0 lightgray;
-    /* transform: scale(1.1); */
+.cont5-card1:hover{
+    box-shadow: 0px 8px 8px 0px lightgray;
+    border-radius: 7px;
 }
-.ser-feat i{
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-.ser-feat .features{
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: rgba(0, 0, 0, 0.838);
-}
-.ser-feat .ser-head{
-    color:black;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-
 .cont6{
     width: 100%;
     height: 500px;
     background-image: url("images/sabout3.png");
     background-size: cover;
+    margin-top: 100px;
     /* border:1px solid blue; */
 }
 .content{
@@ -362,27 +361,44 @@ html,body{
 }
 @media (max-width:768px) {
 
-    .header ul{
-        width: 300px;
+     .header{
+        width: 100%;
+    }
+    .header .nav-links{
+        display: none;
+        width: 250px;
+        /* height: 250px; */
+        background: #333;
         flex-direction: column;
+        gap:10;
+        position: absolute;
+        top:75px;
+        right:0;
+        padding: 10px;
         align-items: center;
-        justify-content: flex-end;
-       
+        z-index: 1;
+        border-radius: 5px;
+        color: white;
+        transition: 2s ease-in;
+        margin: 10px;
     }
-
-    .header ul li{
-        padding: 7px;
-    }
+    
+   .nav-links.show{
+    display: flex;
+   }
+   .hamburger{
+    display: flex;
+   }
 
     .container{
         width: 100%;
-        height: 80%;
+        height: 70%;
         background-image: url("images/h1_hero.png");
         background-position: center;
         background-size: cover;
     }
     .hero{
-        margin: 60px 10px;
+        margin: 100px 10px;
         /* border:1px solid black; */
      
     }
@@ -518,22 +534,20 @@ html,body{
      font-size: 15px;
 }
 .cont5{
-    margin: 200px 0px;
+    margin-top: 50px;
+    width: 100%;
+    height: 900px;margin-top: 100px;
+    
 }
 
-  .ser{
-    width: 100%;
-    flex-direction: column;
-    padding: 10px;
-  }
+.cont5-gallery{
+       flex-direction: column;
+}
+.cont5-card1{
 
-  .ser-feat{
-    width:90%;
-    padding: 60px 20px;
-   
-    
-   
-} 
+    width: 90%;
+
+}
 
      .cont6{
     width: 100%;
@@ -576,14 +590,46 @@ html,body{
 
 @media (max-width:550px) {
 
-
+    
+    .header{
+        width: 100%;
+    }
+    .header .nav-links{
+        display: none;
+        width: 180px;
+        /* height: 250px; */
+        background: #333;
+        flex-direction: column;
+        gap:10;
+        position: absolute;
+        top:75px;
+        right:0;
+        padding: 10px;
+        align-items: center;
+        z-index: 1;
+        border-radius: 5px;
+        color: white;
+        transition: 2s ease-in;
+        margin: 10px;
+    }
+    
+   .nav-links.show{
+    display: flex;
+   }
+   .hamburger{
+    display: flex;
+   }
     .container{
         width: 100%;
-        height: 100%;
+        height: 90%;
         background-image: url("images/h1_hero.png");
         background-position: center;
         background-size: cover;
     }
+  
+
+
+   
     .hero{
         padding: 30px 10px;
     }
@@ -597,6 +643,9 @@ html,body{
 }
     .tagline{
         font-size: 18px;
+    }
+    .cont2{
+        margin-top: 70px;
     }
 
     .cont2-tagline{
@@ -623,6 +672,10 @@ html,body{
    }
    .feat1 div i{
     font-size: 50px;
+}
+
+.cont3{
+    margin-top: 80px;
 }
 
 .cont3-right .cont3-abt{
@@ -700,12 +753,25 @@ html,body{
      /* font-size: 15px; */
 }
 
+.cont5{
+    width: 100%;
+    height: 700px;
+    margin-top: 80px;
+}
+.cont5-gallery{
+       flex-direction: column;
+}
+.cont5-card1{
+
+    width: 100%;
+
+}
 .cont6{
     width: 100%;
     height: 500px;
     padding: 20px;
     background-position: left;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
    .content{
@@ -736,7 +802,7 @@ html,body{
 
 .footer{
     width: 100%;
-    height: 100px;
+    height: 150px;
    
     background-color: rgba(0, 0, 0, 0.818);
     color: white;
@@ -747,6 +813,7 @@ html,body{
 
 .social-links{
     width: 330px;
+    padding: 10px;
     /* border:1px solid white; */
 }
 

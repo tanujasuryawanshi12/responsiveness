@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/303fdafd79.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,14 @@
                 <img src="images/logo.png" alt="">
             </div>
 
-            <ul>
+             <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                 <span></span>
+             </div>
+
+
+            <ul class="nav-links" id="nav-links">
                 <li>Home</li>
                 <li>About</li>
                 <li>Menu</li>
@@ -23,6 +31,7 @@
                 <li><button class="orderbtn">Order Online</button></li>
             </ul>
 
+           
             
         </div>
 
@@ -128,32 +137,29 @@
         </div>
     </div>
 
-    <!-- <div class="cont5">
-        <div>
-            <p>Services We Offer</p>
-            <h1>Our Best Services</h1>
+   <div class="cont5">
+    <div class="cont5-content">
+        <p>Services We Offer</p>
+        <h1>Our Best Services</h1>
+    </div>
+    <div class="cont5-gallery">
+        <div class="cont5-card1">
+             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg><br>
+              <h4>Best Chef</h4><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesci</p>
         </div>
-
-        <div class="ser">
-            <div class="ser-feat">
-                <i class="fa-solid fa-pizza-slice"></i>
-                <p class="features">Best Pizza</p>
-                <p class="ser-head">We use fresh, locally sourced ingredients to ensure quality.We have world-class chefs who make sure every dish is perfect.</p>
-            </div>
-
-            <div class="ser-feat">
-                <i class="fa-solid fa-burger"></i>
-                <p class="features">Best Burger</p>
-                <p class="ser-head">We use fresh, locally sourced ingredients to ensure quality.We have world-class chefs who make sure every dish is perfect.</p>
-            </div>
-
-            <div class="ser-feat">
-                <i class="fa-solid fa-kitchen-set"></i>
-                <p class="features">Best Hygeine</p>
-                <p class="ser-head">We use fresh, locally sourced ingredients to ensure quality.We have world-class chefs who make sure every dish is perfect.</p>
-            </div>
+        <div class="cont5-card1">
+             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg><br>
+              <h4>Best Chef</h4><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesci</p>
         </div>
-    </div> -->
+        <div class="cont5-card1">
+             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg><br>
+              <h4>Best Chef</h4><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesci</p>
+        </div>
+    </div>
+   </div>
 
 
     <div class="cont6">
@@ -179,5 +185,7 @@
       </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
